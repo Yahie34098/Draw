@@ -26,11 +26,12 @@ createGrid.onclick = function () {
   if (used > 0 ) {
     net.innerHTML = "";
   }
-    function calculateWidth(base, additional) {
-      return base + additional * 15.25 ;
-    }
-    var totalWidth = calculateWidth(150 , height);
-    container.style.height = totalWidth + 'px';
+  console.log("yahiemohamed version 2");
+    // function calculateWidth(base, additional) {
+    //   return base + additional * 15.25 ;
+    // }
+    // var totalWidth = calculateWidth(150 , height);
+    // container.style.height = totalWidth + 'px';
     for (let i = 0; i < width; i++) {
       let myheight = document.createElement("div");
       // myheight.style.display = "flex";
