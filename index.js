@@ -59,7 +59,9 @@ colorPicker.oninput = function () {
   color = colorPicker.value ; 
 }
 
-
+print1.onclick = function () {
+  divnet.style.backgroundColor = `${color}`
+}
 
 
 
