@@ -3,14 +3,20 @@ const slider2 = document.getElementById("slider2");
 const sliderValue1 = document.getElementById("sliderValue1");
 const sliderValue2 = document.getElementById("sliderValue2");
 const createGrid = document.getElementById("createGrid");
-let net = document.getElementById("net");
-let container = document.getElementById("container");
+const net = document.getElementById("net");
+const container = document.getElementById("container");
+const clearGrid = document.getElementById("clearGrid");
+const escape = document.getElementById("escape");
+const print1 = document.getElementById("print");
+const colorPicker = document.getElementById("colorPicker");
+const divnet = document.getElementsByClassName(".net .divnet");
 
 
 
 let width = 0;
 let height = 0;
 let used = 0 ; 
+let color;
 
 slider1.oninput = function() { 
   width = +this.value; 
@@ -26,12 +32,11 @@ createGrid.onclick = function () {
   if (used > 0 ) {
     net.innerHTML = "";
   }
-  console.log("yahiemohamed version 2");
-    // function calculateWidth(base, additional) {
-    //   return base + additional * 15.25 ;
-    // }
-    // var totalWidth = calculateWidth(150 , height);
-    // container.style.height = totalWidth + 'px';
+    function calculateWidth(base, additional) {
+      return base + additional * 15.25 ;
+    }
+    var totalWidth = calculateWidth(150 , height);
+    container.style.height = totalWidth + 'px';
     for (let i = 0; i < width; i++) {
       let myheight = document.createElement("div");
       // myheight.style.display = "flex";
@@ -45,7 +50,16 @@ createGrid.onclick = function () {
     used++;
 }
 
+clearGrid.onclick = function () {
+  net.innerHTML = "";
+  container.style.height = "150px";
+}
+
+colorPicker.oninput = function () {
+  color = colorPicker.value ; 
+}
 
 
-console.log(width);
-console.log(height);
+
+
+
