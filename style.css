@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+}
+
+.draw {
+  height: 100vh;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.draw .container {
+  background-color: white;
+  width: 50%;
+  height: 150px;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.draw .container .ranges { 
+  display: flex;
+  justify-content: space-between;
+}
+
+.draw .container .ranges .width { 
+  height: 40px;
+  width: 155px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: start ;
+}
+
+.draw .container .ranges .width .ranges1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.draw .container .ranges .width .ranges1 #sliderValue1 {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+
+.draw .container .ranges .height {
+  height: 40px;
+  width: 155px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: start ;
+}
+
+.draw .container .ranges .height .ranges2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.draw .container .ranges .height .ranges2 #sliderValue2 {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.draw .container .buttons {
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.draw .container .buttons button {
+  background-color: green;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.draw .container .buttons input {
+  height: 36px;
+  width: 60px;
+  border-radius: 4px;
+}
+
+.draw .container .net {
+  display: flex;
+}
+
+.draw .container .net .divnet {
+  width: 15px;
+  height: 15px;
+  border: 1px solid black;
+}

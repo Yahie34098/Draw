@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <div class="draw">
+    <div id="container" class="container">
+      <div class="ranges">
+        <div class="width">
+          <div class="label1">Grid-Width</div>
+          <div class="ranges1">
+            <input type="range" name="slider1" id="slider1" min="0" max="46" value="0">
+            <span id="sliderValue1">0</span>
+          </div>
+        </div>
+        <div class="height">
+          <div class="label2">Grid-Height</div>
+          <div class="ranges2">
+            <input type="range" name="slider2" id="slider2" min="0" max="35" value="0">
+            <span id="sliderValue2">0</span>
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <button type="button" id="createGrid">createGrid</button>
+        <button type="button" id="clearGrid">clearGrid</button>
+        <input type="color" id="colorPicker">
+        <button type="button" id="Escape">Escape</button>
+        <button type="button" id="Print">Print</button>
+      </div>
+      <div id="net" class="net"></div>
+    </div>
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+</html>
